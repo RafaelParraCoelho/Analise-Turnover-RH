@@ -22,7 +22,6 @@ reduzir attrition em 30%, economizando R$ 10,6M/ano.
 
 ## 📂 Dataset
 
-- **Nota:** O arquivo CSV não está incluído no repositório (>100MB).
 - Você pode baixá-lo em: [IBM HR Analytics - Kaggle](https://www.kaggle.com/datasets/pavansubhasht/ibm-hr-analytics-attrition-dataset)
 - **Fonte:** IBM HR Analytics (Kaggle)
 - **Registros:** 1.470 funcionários
