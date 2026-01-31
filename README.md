@@ -17,12 +17,16 @@ isso representa ~237 saídas anuais.
 reduzir attrition em 30%, economizando R$ 10,6M/ano.
 
 ## 📂 Dataset
-- Fonte: IBM HR Analytics (Kaggle)
-- Registros: [PREENCHER]
-- Variáveis: [PREENCHER]
-- Período: Não especificado (dados simulados)
+
+- **Fonte:** IBM HR Analytics (Kaggle)
+- **Registros:** 1.470 funcionários
+- **Variáveis:** 35 (idade, salário, departamento, satisfação, overtime, etc.)
+- **Período:** Dados simulados baseados em casos reais
 
 ## 🔍 Primeiras Observações
-- [ANOTAR O QUE VOCÊ DESCOBRIU]
-- [Ex: "Taxa de attrition: X%"]
-- [Ex: "Variáveis principais: idade, salário, departamento..."]
+
+- Taxa geral de attrition: **16.1%** (~237 saídas de 1.470 funcionários)
+- Dataset balanceado: 1.233 funcionários ativos vs 237 que saíram
+- Variáveis principais: Age, MonthlyIncome, Department, JobSatisfaction, OverTime
+- Sem valores nulos (dados já limpos)
+- Distribuição: Sales (446), R&D (961), HR (63)
