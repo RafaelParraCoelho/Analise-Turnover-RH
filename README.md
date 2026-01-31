@@ -1,5 +1,9 @@
 # 📊 Análise de Turnover - Recursos Humanos
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Pandas](https://img.shields.io/badge/Pandas-2.0-green)
+![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+
 ## 🎯 Contexto de Negócio
 
 **Attrition (rotatividade de funcionários)** é um dos maiores desafios 
