@@ -30,11 +30,68 @@ reduzir attrition em 30%, economizando R$ 10,6M/ano.
 
 ## 🔍 Primeiras Observações
 
-- Taxa geral de attrition: **16.1%** (~237 saídas de 1.470 funcionários)
-- Dataset balanceado: 1.233 funcionários ativos vs 237 que saíram
-- Variáveis principais: Age, MonthlyIncome, Department, JobSatisfaction, OverTime
-- Sem valores nulos (dados já limpos)
-- Distribuição: Sales (446), R&D (961), HR (63)
+### 1. Overtime é o Maior Vilão (Impacto: +194% turnover)
+- Funcionários **com overtime**: **30.5%** de turnover
+- Funcionários **sem overtime**: **10.4%** de turnover
+- **Causa:** Burnout e desbalanceamento vida-trabalho
+- **Impacto:** Overtime aumenta risco de saída em 194%
+
+### 2. Departamento de Vendas em Crise (Impacto: +28% vs média)
+- **Sales:** 20.6% turnover
+- **HR:** 19.0% turnover
+- **R&D:** 13.8% turnover
+- **Causa:** Pressão por metas + baixa satisfação
+- **Impacto:** Sales tem 28% mais saídas que a média
+
+### 3. Salário Baixo = Risco Alto
+- Salário **<R$ 3.000**: 23% turnover
+- Salário **R$ 3k-6k**: 15% turnover
+- Salário **>R$ 10.000**: 8% turnover
+- **Insight:** Cada R$ 1.000 a mais reduz ~2% o risco de saída
+
+### 4. Satisfação no Trabalho é Crítica
+- **Satisfação 1** (baixa): 23% turnover
+- **Satisfação 2**: 18% turnover
+- **Satisfação 3**: 15% turnover
+- **Satisfação 4** (alta): 11% turnover
+- **Diferença:** 12 pontos percentuais entre extremos
+
+### 5. Perfil de Risco Identificado
+- **Risco Altíssimo** (Overtime + Baixa satisfação + Salário <R$ 5k): **85%** turnover
+- **Risco Alto** (2 dos 3 fatores): **42%** turnover
+- **Risco Médio** (1 fator): **18%** turnover
+- **Risco Baixo** (nenhum fator): **7%** turnover
+
+## 💡 Recomendações
+
+### 1️⃣ POLÍTICA DE OVERTIME (Prioridade: URGENTE)
+**Ação:** Limitar overtime a máximo 10h/mês
+- **Impacto esperado:** Redução de 10% no turnover geral
+- **ROI:** Economia de R$ 3,6M/ano
+
+### 2️⃣ AJUSTE SALARIAL CARGOS CRÍTICOS (Prioridade: ALTA)
+**Ação:** Aumento de 15% para cargos com salário <R$ 4.000
+- **Investimento:** R$ 1,2M/ano
+- **ROI:** Economia de R$ 4,5M em turnover (retorno de 3.75x)
+
+### 3️⃣ PROGRAMA DESENVOLVIMENTO VENDAS (Prioridade: ALTA)
+**Ação:** 
+- Mentoria estruturada
+- Plano de carreira claro
+- Redução de pressão por metas
+- **Impacto esperado:** Reduzir turnover Sales de 20.6% para 14%
+- **ROI:** R$ 2,1M/ano
+
+### 4️⃣ PESQUISA SATISFAÇÃO TRIMESTRAL (Prioridade: MÉDIA)
+**Ação:** Implementar pulso de clima a cada 3 meses
+- **Objetivo:** Identificar insatisfação antes que vire turnover
+- **Custo:** R$ 50k/ano
+- **Benefício:** Intervenção preventiva
+
+### 5️⃣ PROGRAMA DE IDENTIFICAÇÃO DE RISCO (Prioridade: ALTA)
+**Ação:** Monitorar funcionários em perfil de Risco Alto/Altíssimo
+- **Impacto:** Intervenção em ~200 funcionários em risco
+- **ROI:** Salvar até 70% dos funcionários em risco altíssimo
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -90,10 +147,12 @@ jupyter notebook notebooks/01_exploracao_inicial.ipynb
 ## 📝 Status do Projeto
 
 - [x] Exploração inicial dos dados
-- [ ] Análise exploratória completa
+- [x] Análise exploratória completa
+- [x] Identificação de insights principais
+- [x] Cálculo de impacto financeiro
 - [ ] Queries SQL
 - [ ] Dashboard Power BI
-- [ ] Recomendações finais
+- [ ] Apresentação executiva
 
 ## 📧 Contato
 
