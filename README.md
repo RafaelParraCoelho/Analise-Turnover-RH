@@ -156,4 +156,4 @@ jupyter notebook notebooks/01_exploracao_inicial.ipynb
 
 ## 📧 Contato
 
-Para dúvidas ou sugestões: rparracoelho@gmail.com
+Para dúvidas ou sugestões: rafael.parra.coelho@hotmail.com
