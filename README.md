@@ -144,6 +144,7 @@ jupyter notebook notebooks/01_exploracao_inicial.ipynb
 [![GitHub](https://img.shields.io/badge/GitHub-black?style=flat&logo=github)](https://github.com/RafaelParraCoelho)
 [![Portfolio](https://img.shields.io/badge/Portfolio-green?style=flat)](https://rafaelparracoelho.github.io/rafaelparra.github.io/)
 
+
 ## 📝 Status do Projeto
 
 - [x] Exploração inicial dos dados

@@ -1,0 +1,222 @@
+CREATE TABLE
+ total_funcionarios | total_saidas | taxa_turnover_pct 
+--------------------+--------------+-------------------
+               1470 |          237 |             16.12
+(1 row)
+
+ attrition | quantidade | percentual 
+-----------+------------+------------
+ No        |       1233 |      83.88
+ Yes       |        237 |      16.12
+(2 rows)
+
+      departamento      | total_funcionarios | saidas | taxa_turnover_pct 
+------------------------+--------------------+--------+-------------------
+ Sales                  |                446 |     92 |             20.63
+ Human Resources        |                 63 |     12 |             19.05
+ Research & Development |                961 |    133 |             13.84
+(3 rows)
+
+      departamento      | total_funcionarios | taxa_turnover_pct | media_geral | diferenca_vs_media 
+------------------------+--------------------+-------------------+-------------+--------------------
+ Sales                  |                446 |             20.63 |       16.12 |               4.51
+ Human Resources        |                 63 |             19.05 |       16.12 |               2.93
+ Research & Development |                961 |             13.84 |       16.12 |              -2.28
+(3 rows)
+
+ faixa_salarial | total_funcionarios | saidas | taxa_turnover_pct | salario_medio 
+----------------+--------------------+--------+-------------------+---------------
+ < R$ 3k        |                395 |    113 |             28.61 |       2394.07
+ R$ 3k-6k       |                519 |     66 |             12.72 |       4514.59
+ R$ 6k-10k      |                275 |     33 |             12.00 |       7652.33
+ > R$ 10k       |                281 |     25 |              8.90 |      14826.28
+(4 rows)
+
+ attrition | quantidade | salario_minimo | salario_medio | salario_maximo | amplitude_interquartil 
+-----------+------------+----------------+---------------+----------------+------------------------
+ No        |       1233 |        1051.00 |       6832.74 |       19999.00 |                4737.00
+ Yes       |        237 |        1009.00 |       4787.09 |       19859.00 |                4712.50
+(2 rows)
+
+ nivel_satisfacao | total_funcionarios | saidas | taxa_turnover_pct 
+------------------+--------------------+--------+-------------------
+                1 |                289 |     66 |             22.84
+                2 |                280 |     46 |             16.43
+                3 |                442 |     73 |             16.52
+                4 |                459 |     52 |             11.33
+(4 rows)
+
+ overtime | total_funcionarios | saidas | taxa_turnover_pct 
+----------+--------------------+--------+-------------------
+ Yes      |                416 |    127 |             30.53
+ No       |               1054 |    110 |             10.44
+(2 rows)
+
+ overtime | jobsatisfaction | total_funcionarios | saidas | taxa_turnover_pct 
+----------+-----------------+--------------------+--------+-------------------
+ Yes      |               2 |                 69 |     26 |             37.68
+ Yes      |               1 |                 84 |     30 |             35.71
+ Yes      |               3 |                121 |     41 |             33.88
+ Yes      |               4 |                142 |     30 |             21.13
+ No       |               1 |                205 |     36 |             17.56
+ No       |               3 |                321 |     32 |              9.97
+ No       |               2 |                211 |     20 |              9.48
+ No       |               4 |                317 |     22 |              6.94
+(8 rows)
+
+  perfil_risco   | total_funcionarios | saidas | taxa_turnover_pct 
+-----------------+--------------------+--------+-------------------
+ Risco Baixo     |                606 |     47 |              7.76
+ Risco Médio     |                400 |     41 |             10.25
+ Risco Alto      |                296 |     84 |             28.38
+ Risco Altíssimo |                168 |     65 |             38.69
+(4 rows)
+
+ employeenumber | age |       department       |          jobrole          | monthlyincome | jobsatisfaction | overtime | yearsatcompany | score |     alerta      
+----------------+-----+------------------------+---------------------------+---------------+-----------------+----------+----------------+-------+-----------------
+           2021 |  21 | Sales                  | Sales Representative      |          2380 |               1 | Yes      |              2 |   100 | RISCO ALTÍSSIMO
+           1131 |  21 | Research & Development | Research Scientist        |          2070 |               2 | Yes      |              2 |    90 | RISCO ALTÍSSIMO
+           1937 |  38 | Research & Development | Research Scientist        |          2133 |               2 | Yes      |             20 |    90 | RISCO ALTÍSSIMO
+           1244 |  27 | Research & Development | Research Scientist        |          2235 |               1 | Yes      |              9 |    90 | RISCO ALTÍSSIMO
+            910 |  33 | Human Resources        | Human Resources           |          2277 |               2 | Yes      |              4 |    90 | RISCO ALTÍSSIMO
+            284 |  22 | Research & Development | Research Scientist        |          2328 |               2 | Yes      |              4 |    90 | RISCO ALTÍSSIMO
+           1292 |  42 | Research & Development | Research Scientist        |          2372 |               2 | Yes      |              1 |    90 | RISCO ALTÍSSIMO
+            434 |  27 | Research & Development | Research Scientist        |          2478 |               2 | Yes      |              4 |    90 | RISCO ALTÍSSIMO
+            913 |  44 | Research & Development | Research Scientist        |          2559 |               1 | Yes      |              8 |    90 | RISCO ALTÍSSIMO
+           1674 |  49 | Research & Development | Laboratory Technician     |          2587 |               1 | Yes      |              2 |    90 | RISCO ALTÍSSIMO
+            351 |  42 | Research & Development | Laboratory Technician     |          2593 |               1 | Yes      |              9 |    90 | RISCO ALTÍSSIMO
+            493 |  31 | Research & Development | Research Scientist        |          2657 |               2 | Yes      |              2 |    90 | RISCO ALTÍSSIMO
+             10 |  59 | Research & Development | Laboratory Technician     |          2670 |               1 | Yes      |              1 |    90 | RISCO ALTÍSSIMO
+            802 |  37 | Research & Development | Research Scientist        |          2782 |               1 | Yes      |              5 |    90 | RISCO ALTÍSSIMO
+            939 |  33 | Research & Development | Research Scientist        |          2799 |               1 | Yes      |              3 |    90 | RISCO ALTÍSSIMO
+           1972 |  38 | Human Resources        | Human Resources           |          2991 |               2 | Yes      |              6 |    90 | RISCO ALTÍSSIMO
+            233 |  27 | Research & Development | Research Scientist        |          3058 |               2 | Yes      |              5 |    90 | RISCO ALTÍSSIMO
+           1948 |  31 | Research & Development | Research Scientist        |          3065 |               1 | Yes      |              4 |    90 | RISCO ALTÍSSIMO
+             21 |  32 | Research & Development | Research Scientist        |          3298 |               2 | Yes      |              6 |    90 | RISCO ALTÍSSIMO
+            214 |  58 | Research & Development | Research Scientist        |          3346 |               2 | Yes      |              1 |    90 | RISCO ALTÍSSIMO
+             51 |  36 | Research & Development | Research Scientist        |          3419 |               1 | Yes      |              1 |    90 | RISCO ALTÍSSIMO
+            267 |  37 | Research & Development | Research Scientist        |          3564 |               1 | Yes      |              8 |    90 | RISCO ALTÍSSIMO
+           1241 |  30 | Research & Development | Research Scientist        |          3579 |               2 | Yes      |             11 |    90 | RISCO ALTÍSSIMO
+            964 |  40 | Research & Development | Research Scientist        |          3617 |               2 | Yes      |              1 |    90 | RISCO ALTÍSSIMO
+           1002 |  45 | Research & Development | Laboratory Technician     |          3633 |               1 | Yes      |              9 |    90 | RISCO ALTÍSSIMO
+           1396 |  32 | Sales                  | Sales Executive           |          4078 |               2 | Yes      |              3 |    80 | RISCO ALTÍSSIMO
+           1669 |  29 | Sales                  | Sales Executive           |          4187 |               2 | Yes      |             10 |    80 | RISCO ALTÍSSIMO
+            879 |  25 | Sales                  | Sales Executive           |          4194 |               1 | Yes      |              5 |    80 | RISCO ALTÍSSIMO
+           1281 |  34 | Sales                  | Sales Executive           |          4538 |               1 | Yes      |              3 |    80 | RISCO ALTÍSSIMO
+            846 |  28 | Sales                  | Sales Executive           |          4779 |               2 | Yes      |              8 |    80 | RISCO ALTÍSSIMO
+            240 |  45 | Sales                  | Sales Executive           |          5006 |               1 | Yes      |              5 |    80 | RISCO ALTÍSSIMO
+            121 |  30 | Sales                  | Sales Executive           |          5209 |               2 | Yes      |             11 |    80 | RISCO ALTÍSSIMO
+            436 |  32 | Sales                  | Sales Executive           |          5228 |               2 | Yes      |             13 |    80 | RISCO ALTÍSSIMO
+             68 |  44 | Sales                  | Sales Executive           |          5454 |               1 | Yes      |              4 |    80 | RISCO ALTÍSSIMO
+            382 |  38 | Sales                  | Sales Executive           |          5605 |               1 | Yes      |              8 |    80 | RISCO ALTÍSSIMO
+            449 |  27 | Sales                  | Sales Executive           |          6349 |               2 | Yes      |              5 |    80 | RISCO ALTÍSSIMO
+            904 |  37 | Sales                  | Sales Executive           |          7642 |               2 | Yes      |             10 |    80 | RISCO ALTÍSSIMO
+            463 |  29 | Sales                  | Sales Executive           |          8268 |               2 | Yes      |              7 |    80 | RISCO ALTÍSSIMO
+           1218 |  35 | Sales                  | Sales Executive           |          8966 |               1 | Yes      |              7 |    80 | RISCO ALTÍSSIMO
+           1425 |  36 | Sales                  | Sales Executive           |          9278 |               2 | Yes      |              5 |    80 | RISCO ALTÍSSIMO
+            729 |  40 | Sales                  | Sales Executive           |         10475 |               1 | Yes      |             18 |    80 | RISCO ALTÍSSIMO
+            864 |  45 | Sales                  | Sales Executive           |         10761 |               1 | Yes      |              5 |    80 | RISCO ALTÍSSIMO
+            363 |  46 | Sales                  | Manager                   |         16872 |               2 | Yes      |              7 |    80 | RISCO ALTÍSSIMO
+           1282 |  51 | Sales                  | Manager                   |         19847 |               2 | Yes      |             29 |    80 | RISCO ALTÍSSIMO
+           1055 |  34 | Sales                  | Sales Representative      |          2220 |               3 | Yes      |              1 |    70 | RISCO ALTÍSSIMO
+            205 |  53 | Sales                  | Sales Representative      |          2306 |               3 | Yes      |              7 |    70 | RISCO ALTÍSSIMO
+           1541 |  34 | Sales                  | Sales Representative      |          2308 |               3 | Yes      |             11 |    70 | RISCO ALTÍSSIMO
+            666 |  34 | Sales                  | Sales Representative      |          2579 |               3 | Yes      |              8 |    70 | RISCO ALTÍSSIMO
+           1556 |  36 | Sales                  | Sales Representative      |          2644 |               4 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+            925 |  47 | Sales                  | Sales Representative      |          3294 |               4 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+             75 |  35 | Research & Development | Laboratory Technician     |          4014 |               1 | Yes      |              2 |    70 | RISCO ALTÍSSIMO
+           2053 |  29 | Research & Development | Laboratory Technician     |          4025 |               2 | Yes      |              4 |    70 | RISCO ALTÍSSIMO
+            518 |  37 | Research & Development | Manufacturing Director    |          4197 |               2 | Yes      |              1 |    70 | RISCO ALTÍSSIMO
+            241 |  56 | Research & Development | Research Scientist        |          4257 |               1 | Yes      |              2 |    70 | RISCO ALTÍSSIMO
+           1885 |  37 | Research & Development | Research Scientist        |          4284 |               1 | Yes      |              5 |    70 | RISCO ALTÍSSIMO
+           1980 |  54 | Research & Development | Manufacturing Director    |          4440 |               1 | Yes      |              5 |    70 | RISCO ALTÍSSIMO
+           1080 |  46 | Research & Development | Research Scientist        |          4615 |               1 | Yes      |             16 |    70 | RISCO ALTÍSSIMO
+            957 |  41 | Research & Development | Laboratory Technician     |          4721 |               1 | Yes      |             18 |    70 | RISCO ALTÍSSIMO
+           1586 |  29 | Research & Development | Laboratory Technician     |          4723 |               1 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+            390 |  26 | Research & Development | Healthcare Representative |          4741 |               1 | Yes      |              5 |    70 | RISCO ALTÍSSIMO
+           1886 |  35 | Research & Development | Manufacturing Director    |          4788 |               2 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+            103 |  46 | Human Resources        | Human Resources           |          5021 |               2 | Yes      |              4 |    70 | RISCO ALTÍSSIMO
+           1294 |  36 | Research & Development | Manufacturing Director    |          5410 |               2 | Yes      |             16 |    70 | RISCO ALTÍSSIMO
+           1998 |  42 | Research & Development | Research Scientist        |          5410 |               1 | Yes      |              4 |    70 | RISCO ALTÍSSIMO
+            799 |  54 | Research & Development | Manufacturing Director    |          5485 |               1 | Yes      |              5 |    70 | RISCO ALTÍSSIMO
+            998 |  33 | Research & Development | Healthcare Representative |          5488 |               2 | Yes      |              6 |    70 | RISCO ALTÍSSIMO
+           1594 |  36 | Research & Development | Laboratory Technician     |          5562 |               1 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+            630 |  52 | Research & Development | Research Scientist        |          5577 |               1 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+           1611 |  45 | Research & Development | Laboratory Technician     |          5769 |               1 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+            474 |  37 | Research & Development | Research Scientist        |          5974 |               1 | Yes      |              7 |    70 | RISCO ALTÍSSIMO
+            803 |  38 | Research & Development | Manufacturing Director    |          5980 |               1 | Yes      |             15 |    70 | RISCO ALTÍSSIMO
+            466 |  41 | Research & Development | Manufacturing Director    |          6032 |               2 | Yes      |              5 |    70 | RISCO ALTÍSSIMO
+           2064 |  27 | Research & Development | Manufacturing Director    |          6142 |               2 | Yes      |              6 |    70 | RISCO ALTÍSSIMO
+           1034 |  55 | Research & Development | Healthcare Representative |          6385 |               2 | Yes      |              8 |    70 | RISCO ALTÍSSIMO
+           1724 |  40 | Research & Development | Manufacturing Director    |          6516 |               1 | Yes      |              1 |    70 | RISCO ALTÍSSIMO
+            347 |  42 | Research & Development | Research Scientist        |          6545 |               1 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+           1251 |  31 | Research & Development | Healthcare Representative |          6833 |               1 | Yes      |              6 |    70 | RISCO ALTÍSSIMO
+           1847 |  36 | Research & Development | Research Scientist        |          6962 |               2 | Yes      |              1 |    70 | RISCO ALTÍSSIMO
+            605 |  42 | Research & Development | Manufacturing Director    |          7406 |               1 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+           1790 |  36 | Research & Development | Healthcare Representative |          8321 |               1 | Yes      |             12 |    70 | RISCO ALTÍSSIMO
+            699 |  36 | Research & Development | Manufacturing Director    |          8847 |               2 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+             70 |  35 | Research & Development | Healthcare Representative |          9884 |               1 | Yes      |              4 |    70 | RISCO ALTÍSSIMO
+           1237 |  36 | Research & Development | Manufacturing Director    |         10252 |               1 | Yes      |              7 |    70 | RISCO ALTÍSSIMO
+           1827 |  47 | Research & Development | Manufacturing Director    |         10333 |               2 | Yes      |             22 |    70 | RISCO ALTÍSSIMO
+            940 |  58 | Research & Development | Healthcare Representative |         10552 |               2 | Yes      |              6 |    70 | RISCO ALTÍSSIMO
+            124 |  46 | Research & Development | Healthcare Representative |         10673 |               1 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+           1460 |  45 | Research & Development | Healthcare Representative |         10851 |               1 | Yes      |              7 |    70 | RISCO ALTÍSSIMO
+           1043 |  39 | Research & Development | Manufacturing Director    |         10880 |               1 | Yes      |             21 |    70 | RISCO ALTÍSSIMO
+           1015 |  30 | Research & Development | Research Director         |         11416 |               1 | Yes      |              8 |    70 | RISCO ALTÍSSIMO
+           1321 |  30 | Research & Development | Manager                   |         11916 |               1 | Yes      |              9 |    70 | RISCO ALTÍSSIMO
+           1242 |  42 | Research & Development | Research Director         |         13191 |               1 | Yes      |              1 |    70 | RISCO ALTÍSSIMO
+            101 |  45 | Research & Development | Research Director         |         13245 |               1 | Yes      |              0 |    70 | RISCO ALTÍSSIMO
+           1373 |  56 | Research & Development | Manufacturing Director    |         13402 |               2 | Yes      |             19 |    70 | RISCO ALTÍSSIMO
+           1278 |  55 | Research & Development | Healthcare Representative |         13577 |               2 | Yes      |             33 |    70 | RISCO ALTÍSSIMO
+           1352 |  51 | Human Resources        | Manager                   |         14026 |               2 | Yes      |             33 |    70 | RISCO ALTÍSSIMO
+           1317 |  50 | Research & Development | Research Director         |         16880 |               1 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+            429 |  39 | Research & Development | Manager                   |         17068 |               1 | Yes      |             21 |    70 | RISCO ALTÍSSIMO
+           1307 |  39 | Research & Development | Manager                   |         17123 |               2 | Yes      |             19 |    70 | RISCO ALTÍSSIMO
+            141 |  50 | Research & Development | Research Director         |         18172 |               2 | Yes      |              8 |    70 | RISCO ALTÍSSIMO
+            396 |  49 | Research & Development | Research Director         |         18665 |               1 | Yes      |              3 |    70 | RISCO ALTÍSSIMO
+            374 |  55 | Research & Development | Manager                   |         19045 |               1 | Yes      |             36 |    70 | RISCO ALTÍSSIMO
+           1973 |  55 | Human Resources        | Manager                   |         19636 |               2 | Yes      |             10 |    70 | RISCO ALTÍSSIMO
+           1423 |  58 | Research & Development | Research Director         |         19701 |               1 | Yes      |              9 |    70 | RISCO ALTÍSSIMO
+(103 rows)
+
+       department       | total_funcionarios | qtd_saidas | salario_medio | custo_estimado_turnover_anual 
+------------------------+--------------------+------------+---------------+-------------------------------
+ Research & Development |                961 |        133 |       6281.25 |                    5012437.50
+ Sales                  |                446 |         92 |       6959.17 |                    3841461.84
+ Human Resources        |                 63 |         12 |       6654.51 |                     479124.72
+(3 rows)
+
+ total_saidas | salario_medio_saidas | custo_total_estimado 
+--------------+----------------------+----------------------
+          237 |              4787.09 |           6807246.00
+(1 row)
+
+ tempo_empresa | total_funcionarios | saidas | taxa_turnover_pct 
+---------------+--------------------+--------+-------------------
+ < 2 anos      |                215 |     75 |             34.88
+ 2-5 anos      |                365 |     66 |             18.08
+ 5-10 anos     |                524 |     58 |             11.07
+ > 10 anos     |                366 |     38 |             10.38
+(4 rows)
+
+ faixa_etaria | total_funcionarios | saidas | taxa_turnover_pct | idade_media 
+--------------+--------------------+--------+-------------------+-------------
+ < 25 anos    |                 97 |     38 |             39.18 |        21.7
+ 25-35 anos   |                554 |    112 |             20.22 |        30.1
+ 35-45 anos   |                505 |     51 |             10.10 |        38.8
+ > 45 anos    |                314 |     36 |             11.46 |        50.6
+(4 rows)
+
+           cargo           | total_funcionarios | saidas | taxa_turnover_pct 
+---------------------------+--------------------+--------+-------------------
+ Sales Representative      |                 83 |     33 |             39.76
+ Laboratory Technician     |                259 |     62 |             23.94
+ Human Resources           |                 52 |     12 |             23.08
+ Sales Executive           |                326 |     57 |             17.48
+ Research Scientist        |                292 |     47 |             16.10
+ Manufacturing Director    |                145 |     10 |              6.90
+ Healthcare Representative |                131 |      9 |              6.87
+ Manager                   |                102 |      5 |              4.90
+ Research Director         |                 80 |      2 |              2.50
+(9 rows)
+
