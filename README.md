@@ -139,15 +139,17 @@ Analise-Turnover-RH/
 ├── data/
 │   └── raw/
 ├── notebooks/
-│   └── 01_exploracao_inicial.ipynb
+│   ├─── 01_exploracao_inicial.ipynb
+│   └─── 02_analise_exploratoria.ipynb
 ├── sql/
 │   └── hr_kpis.sql
 ├── dashboard/
-│   ├── turnover_dashboard.pbix
-    └── prtinrs/
-        ├── screenshot_overview.png
-        ├── screenshot_analise_detalhada.png
-        └── screenshot_perfil_risco.png
+│   ├── turnover_HR.pbix
+│    └── prtinrs/
+│       ├── screenshot_overview.png
+│       ├── screenshot_analise_detalhada.png
+│       ├── screenshot_perfil_risco.png
+│       └── view_execuitiva
 ├── README.md
 └── .gitignore
 
@@ -188,9 +190,9 @@ jupyter notebook notebooks/01_exploracao_inicial.ipynb
 - [x] Análise exploratória completa
 - [x] Identificação de insights principais
 - [x] Cálculo de impacto financeiro
-- [ ] Queries SQL
-- [ ] Dashboard Power BI
-- [ ] Apresentação executiva
+- [x] Queries SQL
+- [x] Dashboard Power BI
+- [x] Apresentação executiva
 
 ## 📧 Contato
 
